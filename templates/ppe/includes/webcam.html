@@ -1,15 +1,7 @@
-<video id="webcam" class="img-fluid" autoplay>
-</video>
-{% block custom_scripts %}
-    <script>
-    const video = document.getElementById('webcam');
+{% load static %}
 
-    navigator.mediaDevices.getUserMedia({ video: true })
-    .then(function(stream){
-        video.srcObject = stream;
-    })
-    .catch(function(error) {
-        console.error('Error accessing webcam: ', error);
-    });
-    </script>
+<video id="webcam" class="img-fluid" autoplay></video>
+
+{% block custom_scripts %}
+    <script src="{% static 'js/webcam.js' %}"></script>
 {% endblock custom_scripts %}

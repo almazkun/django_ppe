@@ -5,11 +5,12 @@ name = "pypi"
 
 [packages]
 django = "*"
+
+[dev-packages]
 ruff = "*"
 black = "*"
 djlint = "*"
-
-[dev-packages]
+coverage = "*"
 
 [requires]
 python_version = "3.12"
