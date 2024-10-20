@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% spaceless %}
+    <html lang="en" class="h-100">
+        <head>
+            {% block meta %}
+                {% include "includes/meta.html" %}
+            {% endblock meta %}
+            {% block style %}
+                {% include "includes/style.html" %}
+            {% endblock style %}
+        </head>
+        <body class="d-flex flex-column h-100">
+            {% block messages %}
+                {% include "includes/messages.html" %}
+            {% endblock messages %}
+            {% block navigation %}
+                {% include "includes/nav.html" %}
+            {% endblock navigation %}
+            <main class="flex-shrink-0 py-3">
+                {% block main_content %}
+                {% endblock main_content %}
+            </main>
+            {% block footer %}
+                {% include "includes/footer.html" %}
+            {% endblock footer %}
+            {% block scripts %}
+                {% include "includes/scripts.html" %}
+            {% endblock scripts %}
+            {% block custom_scripts %}
+            {% endblock custom_scripts %}
+        </body>
+    </html>
+{% endspaceless %}
