@@ -1,0 +1,10 @@
+{% extends "_base.html" %}
+{% load i18n %}
+{% load static %}
+{% block main_content %}
+    <div class="container py-5">
+        <h1 class="display-5">Safe Vision</h1>
+        <p class="lead">Analyze CCTV video for Personal Protective Equipment (PPE) compliance.</p>
+        <div class="d-flex justify-content-center">{% include "ppe/includes/webcam.html" %}</div>
+    </div>
+{% endblock %}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% spaceless %}
-    <html lang="en" class="h-100">
+    <html lang="en" class="h-100" data-bs-theme="light">
         <head>
             {% block meta %}
                 {% include "includes/meta.html" %}
@@ -16,7 +16,7 @@
             {% block navigation %}
                 {% include "includes/nav.html" %}
             {% endblock navigation %}
-            <main class="flex-shrink-0 py-3">
+            <main class="flex-shrink-0">
                 {% block main_content %}
                 {% endblock main_content %}
             </main>
