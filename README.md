@@ -6,6 +6,7 @@ Pipenv is used to manage the virtual environment and dependencies. To install pi
 ```bash
 pip install pipenv
 pipenv install
+cp .env.example .env
 ```
 
 ## Running the server
@@ -15,6 +16,6 @@ pipenv run python manage.py runserver
 ```
 
 ## API documentation
-
+Open the following URL in your browser to view the API documentation:
 http://localhost:8000/api/v1/docs#/
 
