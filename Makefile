@@ -13,7 +13,6 @@ help:
 lint:
 	$(EXECUTOR) $(COMMAND) ruff check --fix -e .
 	$(EXECUTOR) $(COMMAND) black .
-	$(EXECUTOR) $(COMMAND) djlint ./templates --reformat
 
 cov:
 	$(EXECUTOR) $(COMMAND) pip install coverage
